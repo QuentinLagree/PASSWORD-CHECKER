@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ececec;
+    font-family: sans-serif;
+}
+
+form {
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 2em 2em;
+    border-radius: 15px;
+}
+
+form input[type="password"] {
+    width: 100%;
+    padding: 0.8em 0.8em 0.8em;
+    border: 1px solid #d1d1d1;
+    outline: none;
+}
+
+form .conditions {
+    list-style-type: none;
+    font-size: 0.8em;
+    margin: 2em 0;
+}
+
+form .conditions li {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    color: #f34444;
+    margin: 0.7em 0;
+}
+
+form .conditions li.valid {
+    color: #44f34d;
+}
+
+form .conditions img {
+    width: 1.4em;
+    margin-right: 0.5em;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: rgb(88, 127, 255);
+    padding: 0.8em 0;
+    color: #fff;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form button[type="submit"][disabled] {
+    background-color: rgb(121, 121, 121);
+    cursor: no-drop;
+}
+
+form button[type="submit"]:not([disabled]):hover {
+    background-color: rgb(68, 109, 243);
+}
